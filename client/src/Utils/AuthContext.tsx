@@ -65,7 +65,7 @@ export const AuthProvider = ({ children }: Props) => {
         setUser(jwtDecode(data.access));
         console.log(user);
         setLoading(false);
-        navigate("/");
+        navigate("/home");
       } else {
         alert(response.statusText);
       }
